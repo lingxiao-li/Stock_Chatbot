@@ -29,7 +29,43 @@ When you train your model, Rasa NLU will check if all required dependencies are 
 Go to https://rasa.com/docs/nlu/installation/<br>
 
 ### iexfinance
+***Setting up iexfinance***<br>
+<br>
+**From PyPI with pip (latest stable release):**<br>
+```
+$ pip3 install iexfinance
+```
+<br>
+**From development repository (dev version):**<br>
+If you want to use the bleeding edge version you can get it from github:<br>
+```
+$ git clone https://github.com/addisonlynch/iexfinance.git
+$ cd iexfinance
+$ python3 setup.py install
+```
+<br>
+***For more installation information***<br>
+Go to https://github.com/addisonlynch/iexfinance<br>
+<br>
 ### wxpy
+***Setting up wxpy***<br>
+wxpy support Python 3.4-3.6, and 2.7 version<br>
+To ensure the package can be installed in different Python version<br>
+Replace `pip` in the commond below to `pip3` or `pip2`<br>
+<br>
+**From PyPI with pip:**<br>
+```
+pip install -U wxpy
+```
+<br>
+**From douban IO PyPI source (Recommend for users in China mainland):**<br>
+```
+pip install -U wxpy -i "https://pypi.doubanio.com/simple/"
+```
+<br>
+***For more installation information***<br>
+Go to https://wxpy.readthedocs.io/zh/latest/#<br>
+<br>
 ## operating instructions
 ## a file manifest
 ## copyright and licensing information
