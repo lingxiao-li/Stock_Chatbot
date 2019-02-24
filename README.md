@@ -63,14 +63,15 @@ pip install -U wxpy -i "https://pypi.doubanio.com/simple/"
 Go to https://wxpy.readthedocs.io/zh/latest/#<br>
 <br>
 ## operating instructions
-1. Open `chatbot.py` file in any IDE, the IDE I used to run is [Spyder](https://www.spyder-ide.org/).
-2. Change the statement below to chat with different friend
+1. Download all files in a same folder.
+2. Open `chatbot.py` file in any IDE, the IDE I used to run is [Spyder](https://www.spyder-ide.org/).
+3. Change the statement below to chat with different friend
     ```
     # search the friend with nanme "Jethro", sex is male and city is Qingdao
     my_friend = bot.friends().search('Jethro', sex=MALE, city='青岛')[0]
     ```
-3. Run it, an QR code will created automatically, use your `Wechat` to scan the QR code and log in.
-4. Start to chat!
+4. Run it, an QR code will created automatically, use your `Wechat` to scan the QR code and log in.
+5. Start to chat!
 ## a file manifest
 ## copyright and licensing information
 ## contact information for the distributor or programmer
