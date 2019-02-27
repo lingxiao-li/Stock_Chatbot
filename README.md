@@ -1,4 +1,6 @@
 # Stock_Chatbot
+## Demo<br>
+![Demo](https://github.com/JethroLee98/Stock_Chatbot/blob/master/ChatbotDemo.gif "Demo")<br>  
 ## Configuration Instructions
 ## Installation Instructions
 There are few online packages need to be installed for this project
@@ -82,3 +84,4 @@ Go to https://wxpy.readthedocs.io/zh/latest/#<br>
 ## credits and acknowledgements
 ## a changelog
 * 2019.2.24 uploade file 
+* 2019.2.27 upload report, README.md
