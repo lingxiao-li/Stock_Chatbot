@@ -12,145 +12,119 @@
     ],
     "entity_synonyms": [
       {
-        "value": "chinese",
-        "synonyms": ["Chinese", "Chines", "chines"]
+        "value": "TLSA",
+        "synonyms": ["Tesla", "tlsa", "Tlsa", "TESLA", "tesla", "telsla", "teslaa"]
+      },
+      {
+        "value": "AAPL",
+        "synonyms": ["APPLE", "Apple", "Aapl", "apple"]
+      },
+      {
+        "value": "AMZN",
+        "synonyms": ["AMAZON", "Amazon", "Amzn", "amazon", "amazonn"]
+      },
+      {
+        "value": "GOOGL",
+        "synonyms": ["GOOGLE", "Google", "Googl", "google"]
+      },
+      {
+        "value": "MSFT",
+        "synonyms": ["Microsoft", "Msft", "MICROSOFT", "msft", "microsoft"]
+      },
+      {
+        "value": "BABA",
+        "synonyms": ["ALIBABA", "ALI", "alibaba", "ali", "Alibaba"]
+      },
+      {
+        "value": "FB",
+        "synonyms": ["FACEBOOK", "facebook", "fb", "Facebook"]
+      },
+      {
+        "value": "EBAY",
+        "synonyms": ["ebay", "eBay"]
       }
     ],
     "common_examples": [
-         {
-        "text": "hey",
-        "intent": "greet",
-        "entities": []
-         },
-
       {
-        "text": "howdy",
-        "intent": "greet",
+        "text": "hey", 
+        "intent": "greet", 
         "entities": []
-      },
-
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet", 
+        "entities": []
+      }, 
       {
         "text": "hey there",
-        "intent": "greet",
+        "intent": "greet", 
         "entities": []
-      },
-
+      }, 
       {
-        "text": "hello",
-        "intent": "greet",
+        "text": "hello", 
+        "intent": "greet", 
         "entities": []
-      },
-      
+      }, 
+	  {
+        "text": "Hello", 
+        "intent": "greet", 
+        "entities": []
+      }, 
       {
-        "text": "Hello",
-        "intent": "greet",
+        "text": "hi", 
+        "intent": "greet", 
         "entities": []
       },
-      
-      {
-        "text": "hi",
-        "intent": "greet",
-        "entities": []
-      },
-      
       {
         "text": "good morning",
         "intent": "greet",
         "entities": []
       },
-      
       {
         "text": "good evening",
         "intent": "greet",
         "entities": []
       },
-      
       {
         "text": "dear sir",
         "intent": "greet",
         "entities": []
       },
-      
       {
-        "text": "morning",
-        "intent": "greet",
+        "text": "yes", 
+        "intent": "affirm", 
         "entities": []
-      },
-      
-       {
-        "text": "sup",
-        "intent": "greet",
-        "entities": []
-      },
-      
+      }, 
       {
-        "text": "how do you do",
-        "intent": "greet",
+        "text": "yep", 
+        "intent": "affirm", 
         "entities": []
-      },
-
+      }, 
       {
-        "text": "yes",
-        "intent": "affirm",
+        "text": "yeah", 
+        "intent": "affirm", 
         "entities": []
       },
-
-       {
-        "text": "yep",
-        "intent": "affirm",
-        "entities": []
-      },
-	  {
-        "text": "affirm",
-        "intent": "affirm",
-        "entities": []
-      },
-	  {
-        "text": "confirm",
-        "intent": "affirm",
-        "entities": []
-      },
-	  {
-        "text": "do it",
-        "intent": "affirm",
-        "entities": []
-      },
-
-      {
-        "text": "yeah",
-        "intent": "affirm",
-        "entities": []
-      },
-
       {
         "text": "indeed",
         "intent": "affirm",
         "entities": []
       },
-
       {
         "text": "that's right",
         "intent": "affirm",
         "entities": []
       },
-
       {
         "text": "ok",
         "intent": "affirm",
         "entities": []
       },
-
       {
         "text": "great",
         "intent": "affirm",
         "entities": []
       },
-	  {
-        "text": "yes, please",
-        "intent": "affirm",
-        "entities": []
-      },
-
       {
         "text": "right, thank you",
         "intent": "affirm",
@@ -171,1003 +145,746 @@
         "intent": "affirm",
         "entities": []
       },
-      {
-        "text": "sure",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "no",
-        "intent": "negation",
-        "entities": []
-      },
-      {
-        "text": "not right",
-        "intent": "negation",
-        "entities": []
-      },
-      {
-        "text": "not",
-        "intent": "negation",
-        "entities": []
-      },
-      {
-        "text": "don't do it",
-        "intent": "negation",
+	  {
+        "text": "What can you do for me",
+        "intent": "ask_function",
         "entities": []
       },
 	  {
-        "text": "negative",
-        "intent": "negation",
+        "text": "What information you can provide to me",
+        "intent": "ask_function",
         "entities": []
       },
 	  {
-        "text": "No, please",
-        "intent": "negation",
+        "text": "What do you know about stock",
+        "intent": "ask_function",
         "entities": []
+      },
+	  {
+        "text": "Which specific function can you provide to me",
+        "intent": "ask_function",
+        "entities": []
+      },
+	  {
+        "text": "I want to know your function",
+        "intent": "ask_function",
+        "entities": []
+      },
+	  {
+        "text": "i want to know something about TSLA",
+        "intent": "choose_company",
+        "entities": [
+          {
+            "start": 31,
+            "end": 34,
+            "value": "TSLA",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "please give me some information about apple",
+        "intent": "choose_company",
+        "entities": [
+          {
+            "start": 38,
+            "end": 43,
+            "value": "apple",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "give me something about Amazon",
+        "intent": "choose_company",
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "Amazon",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "tell me something about Google",
+        "intent": "choose_company",
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "Google",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "tell me something about Microsoft",
+        "intent": "choose_company",
+        "entities": [
+          {
+            "start": 24,
+            "end": 33,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "let me know about Alibaba",
+        "intent": "choose_company",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "Alibaba",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "tell me something about eBay",
+        "intent": "choose_company",
+        "entities": [
+          {
+            "start": 24,
+            "end": 28,
+            "value": "eBay",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "computer science has a bright future",
+        "intent": "others",
+        "entities": []
+      },
+	  {
+        "text": "i want to be an scientist",
+        "intent": "others",
+        "entities": []
+      },
+	  {
+        "text": "i like listening to classical music",
+        "intent": "others",
+        "entities": []
+      },
+	  {
+        "text": "tell me the current stock price",
+        "intent": "get_price",
+        "entities": []
+      },
+	  {
+        "text": "I want to know the current stock price",
+        "intent": "get_price",
+        "entities": []
+      },
+	  {
+        "text": "let me know current stock price",
+        "intent": "get_price",
+        "entities": []
+      },
+	  {
+        "text": "current stock price",
+        "intent": "get_price",
+        "entities": []
+      },
+	  {
+        "text": "stock price now",
+        "intent": "get_price",
+        "entities": []
+      },
+	  {
+        "text": "tell me the open stock price",
+        "intent": "get_open_price",
+        "entities": []
+      },
+	  {
+        "text": "I want to know the open price",
+        "intent": "get_open_price",
+        "entities": []
+      },
+	  {
+        "text": "let me know open stock price",
+        "intent": "get_open_price",
+        "entities": []
+      },
+	  {
+        "text": "open price",
+        "intent": "get_open_price",
+        "entities": []
+      },
+	  {
+        "text": "open stock price",
+        "intent": "get_open_price",
+        "entities": []
+      },
+	  {
+        "text": "could you please tell me the stock price at 2018.3.14",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+		  {
+            "start": 44,
+            "end": 53,
+            "value": "2018.3.14",
+            "entity": "date"
+          }
+        ]
+      },
+	  {
+        "text": "tell me the stock price at 2019.2.19",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+		  {
+            "start": 27,
+            "end": 36,
+            "value": "2019.2.19",
+            "entity": "date"
+          }
+        ]
+      },
+	  {
+        "text": "let me know the stock price at 2019.1.10",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+		  {
+            "start": 31,
+            "end": 40,
+            "value": "2019.1.10",
+            "entity": "date"
+          }
+        ]
+      },
+	  {
+        "text": "what is the stock price at 2017.11.5",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+		  {
+            "start": 27,
+            "end": 36,
+            "value": "2017.11.5",
+            "entity": "date"
+          }
+        ]
+      },
+	  {
+        "text": "what is the stock price between 2017.11.5 and 2017.12.17",
+        "intent": "get_historical_price",
+        "entities": [
+		  {
+            "start": 32,
+            "end": 41,
+            "value": "2017.11.5",
+            "entity": "start_date"
+          },
+		  {
+            "start": 46,
+            "end": 56,
+            "value": "2017.12.17",
+            "entity": "end_date"
+          }
+        ]
+      },
+	  {
+        "text": "tell me the stock price between 2018.12.25 and 2019.1.6",
+        "intent": "get_historical_price",
+        "entities": [
+		  {
+            "start": 32,
+            "end": 42,
+            "value": "2018.12.25",
+            "entity": "start_date"
+          },
+		  {
+            "start": 47,
+            "end": 55,
+            "value": "2019.1.6",
+            "entity": "end_date"
+          }
+        ]
+      },
+	  {
+        "text": "i want to know the stock price between 2016.4.12 and 2016.5.25",
+        "intent": "get_historical_price",
+        "entities": [
+		  {
+            "start": 39,
+            "end": 48,
+            "value": "2016.4.12",
+            "entity": "start_date"
+          },
+		  {
+            "start": 53,
+            "end": 62,
+            "value": "2016.5.25",
+            "entity": "end_date"
+          }
+        ]
+      },
+	  {
+        "text": "let me know the stock price between 2016.8.15 and 2018.9.1",
+        "intent": "get_historical_price",
+        "entities": [
+		  {
+            "start": 36,
+            "end": 45,
+            "value": "2016.8.15",
+            "entity": "start_date"
+          },
+		  {
+            "start": 50,
+            "end": 58,
+            "value": "2018.9.1",
+            "entity": "end_date"
+          }
+        ]
+      },
+	  {
+        "text": "cloud you please tell me the stock price between 2018.5.19 and 2018.6.6",
+        "intent": "get_historical_price",
+        "entities": [
+		  {
+            "start": 49,
+            "end": 58,
+            "value": "2018.5.19",
+            "entity": "start_date"
+          },
+		  {
+            "start": 63,
+            "end": 71,
+            "value": "2018.6.6",
+            "entity": "end_date"
+          }
+        ]
       },
       {
-        "text": "see you",
-        "intent": "goodbye",
-        "entities": []
+        "text": "i want to get the current stock price of TSLA",
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 41,
+            "end": 45,
+            "value": "TSLA",
+            "entity": "company"
+          }
+        ]
       },
       {
-        "text": "have a good time",
-        "intent": "goodbye",
-        "entities": []
+        "text": "Give me some information about Tesla",
+        "intent": "choose_company",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "Tesla",
+            "entity": "company"
+          }
+        ]
       },
-
       {
-        "text": "regards",
-        "intent": "goodbye",
-        "entities": []
+        "text": "give me the current price of AMZN", 
+        "intent": "get_price", 
+        "entities": [
+          {
+            "start": 29, 
+            "end": 33, 
+            "value": "AMZN", 
+            "entity": "company"
+          } 
+        ]
       },
-     
+	  {
+        "text": "please tell me the price of ALIBABA", 
+        "intent": "get_price", 
+        "entities": [
+          {
+            "start": 34, 
+            "end": 41, 
+            "value": "ALIBABA", 
+            "entity": "company"
+          } 
+        ]
+      },
+	  {
+        "text": "What about Ebay", 
+        "intent": "get_price", 
+        "entities": [
+          {
+            "start": 11, 
+            "end": 15, 
+            "value": "EBAY", 
+            "entity": "company"
+          } 
+        ]
+      },
+	  {
+        "text": "and facebook", 
+        "intent": "get_price", 
+        "entities": [
+          {
+            "start": 4, 
+            "end": 12, 
+            "value": "FB", 
+            "entity": "company"
+          } 
+        ]
+      },
+	  {
+        "text": "give me the price of amazonn", 
+        "intent": "get_price", 
+        "entities": [
+          {
+            "start": 21, 
+            "end": 28, 
+            "value": "amazonn", 
+            "entity": "company"
+          } 
+        ]
+      },
+	  {
+        "text": "do you know stock price of apple", 
+        "intent": "get_price", 
+        "entities": [
+          {
+            "start": 27, 
+            "end": 32, 
+            "value": "apple", 
+            "entity": "company"
+          } 
+        ]
+      },
+	  {
+        "text": "what about tesla", 
+        "intent": "get_price", 
+        "entities": [
+          {
+            "start": 11, 
+            "end": 16, 
+            "value": "tesla", 
+            "entity": "company"
+          } 
+        ]
+      },
       {
-        "text": "see ya",
-        "intent": "goodbye",
-        "entities": []
-      },
-     
+        "text": "could you please tell me the stock price of Amazon at 2017.3.14",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+          {
+            "start": 52,
+            "end": 58,
+            "value": "Amazon",
+            "entity": "company"
+          },
+		  {
+            "start": 62,
+            "end": 71,
+            "value": "2017.3.14",
+            "entity": "date"
+          }
+        ]
+      },   
+{
+        "text": "I want to know the stock price of GOOGLE at 2015.12.10",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+          {
+            "start": 42,
+            "end": 48,
+            "value": "GOOGLE",
+            "entity": "company"
+          },
+		  {
+            "start": 52,
+            "end": 62,
+            "value": "2015.12.10",
+            "entity": "date"
+          }
+        ]
+      },	  
       {
-        "text": "goodbye",
-        "intent": "goodbye",
-        "entities": []
+        "text": "give me Microsoft stock price at 2018.4.6",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "Microsoft",
+            "entity": "company"
+          },
+		  {
+            "start": 33,
+            "end": 41,
+            "value": "2018.4.6",
+            "entity": "date"
+          }
+        ]
       },
-     
-       {
-        "text": "good bye",
-        "intent": "goodbye",
-        "entities": []
+	  {
+        "text": "tell me EBAY stock price at 2017.1.30",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "EBAY",
+            "entity": "company"
+          },
+		  {
+            "start": 28,
+            "end": 37,
+            "value": "2017.1.30",
+            "entity": "date"
+          }
+        ]
       },
-      
       {
-        "text": "stop",
-        "intent": "goodbye",
-        "entities": []
+        "text": "I want to know the stock price of ALIBABA at 2019.1.27",
+        "intent": "get_historical_price_intraday",
+        "entities": [
+          {
+            "start": 34,
+            "end": 41,
+            "value": "ALIBABA",
+            "entity": "company"
+          },
+		  {
+            "start": 45,
+            "end": 54,
+            "value": "2019.1.27",
+            "entity": "date"
+          }
+        ]
       },
-      
       {
-        "text": "end",
-        "intent": "goodbye",
+        "text": "I'd like to know the stock price of FACEBOOK between 2018.11.10 to 2018.12.12",
+        "intent": "get_historical_price",
+        "entities": [
+          {
+            "start": 36,
+            "end": 44,
+            "value": "FACEBOOK",
+            "entity": "company"
+          },
+		  {
+            "start": 53,
+            "end": 63,
+            "value": "2018.11.10",
+            "entity": "start_date"
+          },
+		  {
+            "start": 67,
+            "end": 77,
+            "value": "2018.12.12",
+            "entity": "end_date"
+          }
+        ]
+      },
+	  {
+        "text": "give the stock price of Apple between 2016.9.10 to 2016.10.3",
+        "intent": "get_historical_price",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "Apple",
+            "entity": "company"
+          },
+		  {
+            "start": 38,
+            "end": 47,
+            "value": "2016.9.10",
+            "entity": "start_date"
+          },
+		  {
+            "start": 51,
+            "end": 60,
+            "value": "2016.10.3",
+            "entity": "end_date"
+          }
+        ]
+      },{
+        "text": "i want to know the stock price of tsla between 2018.4.12 to 2018.6.6",
+        "intent": "get_historical_price",
+        "entities": [
+          {
+            "start": 34,
+            "end": 43,
+            "value": "tsla",
+            "entity": "company"
+          },
+		  {
+            "start": 53,
+            "end": 63,
+            "value": "2018.11.10",
+            "entity": "start_date"
+          },
+		  {
+            "start": 67,
+            "end": 77,
+            "value": "2018.12.12",
+            "entity": "end_date"
+          }
+        ]
+      },{
+        "text": "the stock price of facebook between 2019.1.15 to 2019.2.10",
+        "intent": "get_historical_price",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "facebook",
+            "entity": "company"
+          },
+		  {
+            "start": 36,
+            "end": 45,
+            "value": "2019.1.15",
+            "entity": "start_date"
+          },
+		  {
+            "start": 48,
+            "end": 57,
+            "value": "2019.2.10",
+            "entity": "end_date"
+          }
+        ]
+      },
+	  {
+        "text": "Please give me the stock price of google between 2017.4.21 to 2017.5.15",
+        "intent": "get_historical_price",
+        "entities": [
+          {
+            "start": 34,
+            "end": 40,
+            "value": "google",
+            "entity": "company"
+          },
+		  {
+            "start": 49,
+            "end": 58,
+            "value": "2017.4.21",
+            "entity": "start_date"
+          },
+		  {
+            "start": 62,
+            "end": 71,
+            "value": "2017.5.15",
+            "entity": "end_date"
+          }
+        ]
+      },
+	  {
+        "text": "Please give me the open price of EBAY",
+        "intent": "get_open_price",
+        "entities": [
+          {
+            "start": 33,
+            "end": 37,
+            "value": "EBAY",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "Please tell me the open price of google",
+        "intent": "get_open_price",
+        "entities": [
+          {
+            "start": 33,
+            "end": 39,
+            "value": "google",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "let me know the open price of alibaba",
+        "intent": "get_open_price",
+        "entities": [
+          {
+            "start": 30,
+            "end": 37,
+            "value": "alibaba",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "tell me the open price of amazon",
+        "intent": "get_open_price",
+        "entities": [
+          {
+            "start": 26,
+            "end": 51,
+            "value": "amazon",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "could you please tell me the open price of microsoft",
+        "intent": "get_open_price",
+        "entities": [
+          {
+            "start": 43,
+            "end": 52,
+            "value": "microsoft",
+            "entity": "company"
+          }
+        ]
+      },
+	  {
+        "text": "open price of apple",
+        "intent": "get_open_price",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "apple",
+            "entity": "company"
+          }
+        ]
+      },
+      {
+        "text": "bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "goodbye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "good bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "stop", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "end", 
+        "intent": "goodbye", 
         "entities": []
       },
-      
       {
         "text": "farewell",
         "intent": "goodbye",
         "entities": []
       },
-      
       {
         "text": "Bye bye",
         "intent": "goodbye",
         "entities": []
       },
-      
       {
         "text": "have a good one",
         "intent": "goodbye",
         "entities": []
-      },
-     
-      {
-        "text": "What can you do for me",
-        "intent": "ask_function",
-        "entities": []
-      },
-	
-      {
-        "text": "What is your function",
-        "intent": "ask_function",
-        "entities": []
-      },
-
-      {
-        "text": "Which specific function can you provide to me",
-        "intent": "ask_function",
-        "entities": []
-      },
-      
-      {
-        "text": "I want to know your function",
-        "intent": "ask_function",
-        "entities": []
-      },
- 
-      {
-        "text": "May I know your function",
-        "intent": "ask_function",
-        "entities": []
-      },
- 
-      {
-        "text": "What kind of function could you provide",
-        "intent": "ask_function",
-        "entities": []
-      },
- 
-      {
-        "text": "Do you have any function",
-        "intent": "ask_function",
-        "entities": []
-      },
- 
-      {
-        "text": "What can you do",
-        "intent": "ask_function",
-        "entities": []
-      },
- 
-      {
-        "text": "Any function",
-        "intent": "ask_function",
-        "entities": []
-      },
- 
-      {
-        "text": "Show me your function",
-        "intent": "ask_function",
-        "entities": []
-      },
-
-      {
-        "text": "What do you do",
-        "intent": "ask_function",
-        "entities": []
-      },
- 
-      {
-        "text": "Do you have some special function",
-        "intent": "ask_function",
-        "entities": []
-      },
-     
-      {
-        "text": "Could you tell me your fuction",
-        "intent": "ask_function",
-        "entities": []
-      },
- 
-      {
-        "text": "Could you  show me what you could do",
-        "intent": "ask_function",
-        "entities": []
-      },
-      {
-        "text": "I want to be a teacher",
-        "intent": "others",
-        "entities": []
-      },
-      {
-        "text": "123",
-        "intent": "others",
-        "entities": []
-      },
-      {
-        "text": "askhdakjhds",
-        "intent": "others",
-        "entities": []
-      },
-      {
-        "text": "12345",
-        "intent": "others",
-        "entities": []
-      },
-      {
-        "text": "I am a teacher",
-        "intent": "others",
-        "entities": []
-      },
-      {
-        "text": "Can you sing a song for me",
-        "intent": "others",
-        "entities": []
-      },
-      {
-        "text": "Can you check the stock price for me",
-        "intent": "others",
-        "entities": []
-      },
-      {
-        "text": "I want to be a docotor",
-        "intent": "others",
-        "entities": []
-      },
-      {
-        "text": "What the hell with you",
-        "intent": "others",
-        "entities": []
-      },
-
-     {
-        "text": "show me the events tomorrow",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 27,
-            "value": "tomorrow",
-            "entity": "date"
-          }
-        ]
-      },
-	  
-	  {
-        "text": "show me the events at 2 o'clock",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 22,
-            "end": 31,
-            "value": "2 o'clock",
-            "entity": "time"
-          }
-        ]
-      },
-	  
-	  {
-        "text": "tell me the events yesterday",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 28,
-            "value": "yesterday",
-            "entity": "date"
-          }
-        ]
-      },
-      
-     {
-        "text": "show me the events in Liverpool",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 22,
-            "end": 31,
-            "value": "Liverpool",
-            "entity": "location"
-          }
-        ]
-      },
-
-      {
-        "text": "The event next day",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 10,
-            "end": 18,
-            "value": "next day",
-            "entity": "date"
-          }
-        ]
-      },  
-
-      {
-        "text": "The event about group project",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 16,
-            "end": 29,
-            "value": "group project",
-            "entity": "event_name"
-          }
-        ]
-      }, 
-
-      {
-        "text": "show the event in London",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 18,
-            "end": 24,
-            "value": "London",
-            "entity": "location"
-          }
-        ]
-      }, 
-      {
-        "text": "show the event in tesco",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 18,
-            "end": 23,
-            "value": "tesco",
-            "entity": "location"
-          }
-        ]
-      }, 
-
-      {
-        "text": "I want to know event about meeting",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 27,
-            "end": 34,
-            "value": "meeting",
-            "entity": "event_name"
-          }
-        ]
-      }, 
-      {
-        "text": "Could you tell me the event in the afternoon",
-        "intent": "search_event",
-       "entities": [
-          {
-            "start": 35,
-            "end": 44,
-            "value": "afternoon",
-            "entity": "time"
-          }
-        ]
-      }, 
-
-      {
-        "text": "Show me any event about party",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 24,
-            "end": 29,
-            "value": "party",
-            "entity": "event_name"
-          }
-        ]
-      }, 
-      {
-        "text": "Show me the meeting tomorrow",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 12,
-            "end": 19,
-            "value": "meeting",
-            "entity": "event_name"
-          },
-          {
-            "start": 20,
-            "end": 28,
-            "value": "tomorrow",
-            "entity": "date"
-          }
-        ]
-      },
-      {
-        "text": "Show me the event at 2 PM",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 21,
-            "end": 25,
-            "value": "2 PM",
-            "entity": "time"
-          }
-        ]
-      },
-      {
-        "text": "Tell me any schedule at 5 PM",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 24,
-            "end": 28,
-            "value": "5 PM",
-            "entity": "time"
-          }
-        ]
-      },
-
-      {
-        "text": "show me all the event at 12 o'clock",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start":25,
-            "end": 35,
-            "value": "12 o'clock",
-            "entity": "time"
-          }
-        ]
-      }, 
-
-      {
-        "text": "show me the event the day after tomorrow",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 18,
-            "end": 40,
-            "value": "the day after tomorrow",
-            "entity": "time"
-          }
-        ]
-      }, 
-
-      {
-        "text": "Tell me the event at 12pm",
-        "intent": "search_event",
-        "entities": [
-          {
-            "start": 21,
-            "end": 25,
-            "value": "12pm",
-            "entity": "time"
-          }
-        ]
-      }, 
-
-      {
-        "text": "create an event",
-        "intent": "create_event",
-        "entities": []
-      },
-
-      {
-        "text": "create event",
-        "intent": "create_event",
-        "entities": []
-      },
-  
-      {
-        "text": "Make a new event",
-        "intent": "create_event",
-        "entities": []
-      },
-
-      {
-        "text": "Add a new event",
-        "intent": "create_event",
-        "entities": []
-      },
-
-      {
-        "text": "I wanna create a new event",
-        "intent": "create_event",
-        "entities": []
-      },
-
-      {
-        "text": "Would you create a new event for me",
-        "intent": "create_event",
-        "entities": []
-      },
-
-     {
-        "text": "create an new event",
-        "intent": "create_event",
-        "entities": []
-      },
-
-      {
-        "text": "May I create an event",
-        "intent": "create_event",
-        "entities": []
-      },
- 
-      {
-        "text": "Establish an event for me",
-        "intent": "create_event",
-        "entities": []
-      },
-
-     {
-        "text": "Add an event in my schedule",
-        "intent": "create_event",
-        "entities": []
-      },
-
-      {
-        "text": "A new event please",
-        "intent": "create_event",
-        "entities": []
-      },
-	 
-       {
-        "text": "delete event",
-        "intent": "delete_event",
-        "entities": []
-      },
-
-        {
-        "text": "delete all event",
-        "intent": "delete_event",
-        "entities": []
-        },
-	
-        {
-        "text": "remove event",
-        "intent": "delete_event",
-        "entities": []
-      },
-	
-      {
-        "text": "Could you remove event",
-        "intent": "delete_event",
-        "entities": []
-       },
-	
-       {
-        "text": "delete event for me",
-        "intent": "delete_event",
-        "entities": []
-      },
-
-       {
-        "text": "delete my event ",
-        "intent": "delete_event",
-        "entities": []
-      },
-
-       {
-        "text": "delete all my event please",
-        "intent": "delete_event",
-        "entities": []
-       },
-	  
-       {
-        "text": "Remove created event",
-        "intent": "delete_event",
-        "entities": []
-      },
-	  
-       {
-        "text": "Would delete the event that I have",
-        "intent": "delete_event",
-        "entities": []
-      },
-	
-       {
-        "text": "delete the event I created",
-        "intent": "delete_event",
-        "entities": []
-      },
-	  
-       {
-        "text": "remove a event",
-        "intent": "delete_event",
-        "entities": []
-      },
-	  {
-        "text": "the event today",
-        "intent": "add_detail",
-        "entities": [
-		{  
-			"start": 10,
-            "end": 15,
-            "value": "today",
-            "entity": "date"}]
-      },
-	  {
-        "text": "delete the event today",
-        "intent": "add_detail",
-        "entities": [
-		{  
-			"start": 17,
-            "end": 22,
-            "value": "today",
-            "entity": "date"}]
-      },
-	  {
-        "text": "the event tomorrow",
-        "intent": "add_detail",
-        "entities": [
-		{  
-			"start": 10,
-            "end": 18,
-            "value": "tomorrow",
-            "entity": "date"}]
-      },
-	  {
-        "text": "delete the event tomorrow",
-        "intent": "add_detail",
-        "entities": [
-		{  
-			"start": 17,
-            "end": 25,
-            "value": "tomorrow",
-            "entity": "date"}]
-      },
-      {
-        "text": "2pm",
-        "intent": "add_detail",
-        "entities": [
-		{  
-			"start": 0,
-            "end": 3,
-            "value": "2pm",
-            "entity": "time"}]
-      },
-      {
-        "text": "delet meeting",
-        "intent": "add_detail",
-        "entities": [
-		{  
-			"start": 6,
-            "end": 13,
-            "value": "meeting",
-            "entity": "event_name"}]
-      },
-      {
-        "text": "a meeting at 2am in ashton building",
-        "intent": "add_detail",
-        "entities": [
-		{  
-			"start": 2,
-            "end": 9,
-            "value": "meeting",
-            "entity": "event_name"},
-        {  "start": 13,
-            "end": 16,
-            "value": "2am",
-            "entity": "time"},
-        {  "start": 20,
-            "end": 35,
-            "value": "ashton building",
-            "entity": "location"}]
-      },
-	  {
-        "text": "buy some egges at 5pm in Tesco",
-        "intent": "add_detail",
-        "entities": [
-		{  
-			"start": 0,
-            "end": 14,
-            "value": "buy some egges",
-            "entity": "event_name"},
-        {  "start": 18,
-            "end": 21,
-            "value": "5pm",
-            "entity": "time"},
-        {  "start": 25,
-            "end": 30,
-            "value": "Tesco",
-            "entity": "location"}]
-      },
-     {
-        "text": "I will join a lecture at 10am tomorrow",
-        "intent": "add_detail",
-        "entities": [
-			{  
-			"start": 14,
-            "end": 21,
-            "value": "lecture",
-            "entity": "event_name"
-			},
-			{	
-			"start": 25,
-            "end": 29,
-            "value": "10am",
-            "entity": "time"
-			},
-			{	
-			"start": 30,
-            "end": 38,
-            "value": "tomorrow",
-            "entity": "date"
-			}
-			]
-          },
-		  
-
-      {
-        "text": "I need to submit coursework at 12am on March 17th",
-        "intent": "add_detail",
-        "entities": [
-            {  
-			"start": 10,
-            "end": 27,
-            "value": "submit coursework",
-            "entity": "event_name"
-			},
-            {  
-			"start": 31,
-            "end": 35,
-            "value": "12am",
-            "entity": "time"
-			},
-			{  
-			"start": 41,
-            "end": 51,
-            "value": "March 17th",
-            "entity": "date"
-			}
-             ]
-      },
-	 
-       {
-        "text": "a concert with my friends tomorrow",
-        "intent": "add_detail",
-        "entities": [
-           {  
-		    "start": 2,
-            "end": 9,
-            "value": "concert",
-            "entity": "event_name"},
-           {  "start": 26,
-            "end": 34,
-            "value": "tomorrow",
-            "entity": "date"}
-            ]
-      },
-	  {
-        "text": "the event in Liverpool",
-        "intent": "add_detail",
-        "entities": [
-           {  
-		    "start": 13,
-            "end": 22,
-            "value": "Liverpool",
-            "entity": "location"}
-            ]
-      },
-	  {
-        "text": "the event in London",
-        "intent": "add_detail",
-        "entities": [
-           {  
-		    "start": 13,
-            "end": 19,
-            "value": "London",
-            "entity": "location"}
-            ]
-      },
-	  {
-        "text": "a meeting at 2am in London today",
-        "intent": "add_detail",
-        "entities": [
-           {  
-		    "start": 2,
-            "end": 9,
-            "value": "meeting",
-            "entity": "event_name"},
-			{  
-		    "start": 13,
-            "end": 16,
-            "value": "2am",
-            "entity": "time"},
-			{  
-		    "start": 20,
-            "end": 26,
-            "value": "London",
-            "entity": "location"},
-			{  
-		    "start": 27,
-            "end": 32,
-            "value": "today",
-            "entity": "date"}
-            ]
-      },
-       {
-        "text": "we will have a party for Ann at Ann's apartment",
-        "intent": "add_detail",
-        "entities": [
-         {  "start": 15,
-            "end": 20,
-            "value": "party",
-            "entity": "event_name"},
-          {  "start":32,
-            "end": 47,
-            "value": "Ann's apartment",
-            "entity": "location"}
-           ]
-      },      
-
-      {
-        "text": "I have a meeting 2 o'clock today",
-        "intent": "add_detail",
-        "entities": [{
-            "start": 9,
-            "end": 16,
-            "value": "meeting",
-            "entity": "event_name"
-          },
-         {
-            "start": 18,
-            "end": 26,
-            "value": "2 o'clock",
-            "entity": "time"
-          },
-          {
-            "start": 28,
-            "end": 33,
-            "value": "today",
-            "entity": "date"
-          }
-           ]
-      },
-	 
-      {
-        "text": "I will meet someone for lunch today",
-        "intent": "add_detail",
-        "entities": [
-		  {
-            "start": 24,
-            "end": 29,
-            "value": "lunch",
-            "entity": "event_name"
-          },
-		  {
-            "start": 30,
-            "end": 35,
-            "value": "today",
-            "entity": "date"
-          }
-		]
-      },
-      {
-        "text": "I have meeting at 2PM on June 25th",
-        "intent": "add_detail",
-        "entities": [
-		  {
-            "start": 7,
-            "end": 14,
-            "value": "meeting",
-            "entity": "event_name"
-          },
-          {
-            "start": 18,
-            "end": 21,
-            "value": "2PM",
-            "entity": "time"
-          },
-		  {
-            "start": 25,
-            "end": 34,
-            "value": "June 25th",
-            "entity": "date"
-          }
-		]
-      },
-      {
-        "text": "I have meeting at 9AM on Janury 2nd",
-        "intent": "add_detail",
-        "entities": [
-		  {
-            "start": 7,
-            "end": 14,
-            "value": "meeting",
-            "entity": "event_name"
-          },
-          {
-            "start": 18,
-            "end": 21,
-            "value": "9AM",
-            "entity": "time"
-          },
-		  {
-            "start": 25,
-            "end": 35,
-            "value": "Janury 2nd",
-            "entity": "date"
-          }
-		]
-      },
-      {
-        "text": "I have a deadline at 10AM on February 2nd",
-        "intent": "add_detail",
-        "entities": [
-		  {
-            "start": 8,
-            "end": 16,
-            "value": "deadline",
-            "entity": "event_name"
-          },
-          {
-            "start": 20,
-            "end": 24,
-            "value": "10AM",
-            "entity": "time"
-          },
-		  {
-            "start": 28,
-            "end": 40,
-            "value": "February 2nd",
-            "entity": "date"
-          }
-		]
-      },
-      
-      {
-        "text": "I have deadline at 5 PM on March 17th",
-        "intent": "add_detail",
-        "entities": [
-		  {
-            "start": 7,
-            "end": 15,
-            "value": "deadline",
-            "entity": "event_name"
-          },
-          {
-            "start": 19,
-            "end": 23,
-            "value": "5 PM",
-            "entity": "time"
-          },
-		  {
-            "start": 27,
-            "end": 37,
-            "value": "March 17th",
-            "entity": "date"
-          }
-		]
-      },
-	 
-     {
-        "text": "I will meet someone for dinner 7 o'clock the day after tomorrow",
-        "intent": "add_detail",
-        "entities": [
-		  {
-            "start": 24,
-            "end": 30,
-            "value": "dinner",
-            "entity": "event_name"
-          },
-		  {
-            "start": 31,
-            "end": 40,
-            "value": "7 o'clock",
-            "entity": "time"
-          },
-		  {
-            "start": 41,
-            "end": 63,
-            "value": "the day after tomorrow",
-            "entity": "date"
-          }
-		]
-      },
-
-      {
-        "text": "I will meet someone for dinner at restaurant May 2nd",
-        "intent": "add_detail",
-        "entities": [
-		  {
-            "start": 24,
-            "end": 30,
-            "value": "dinner",
-            "entity": "event_name"
-          },
-		  {
-            "start": 34,
-            "end": 44,
-            "value": "restaurant",
-            "entity": "location"
-          },
-		  {
-            "start": 45,
-            "end": 52,
-            "value": "May 2nd",
-            "entity": "date"
-          }
-         ]
       }
-	
     ]
   }
 }
